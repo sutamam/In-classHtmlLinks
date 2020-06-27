@@ -34,6 +34,10 @@ namespace In_classHtmlLinks.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        public IActionResult ShivaIndex()
+        {
+            return View();
+        }
         public IActionResult InputNameState(string name, string state)
         {
             //Setting Data in Model
